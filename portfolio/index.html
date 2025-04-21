@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Abdurrahman Oriolowo | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <h1 class="logo">AKAZA</h1>
+      <ul class="nav-links">
+        <li><a href="#" data-tab="home">Home</a></li>
+        <li><a href="#" data-tab="about">About</a></li>
+        <li><a href="#" data-tab="services">Services</a></li>
+        <li><a href="#" data-tab="projects">Portfolio</a></li>
+        <li><a href="#" data-tab="contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Home -->
+    <section id="home" class="tab-content active">
+      <div class="container hero-content">
+        <h1>👋 Hi, I'm <span>Abdurrahman Oriolowo</span></h1>
+        <p>Full Stack Developer | JavaScript Enthusiast</p>
+        <p class="tagline">I build beautiful web apps and solve real-world problems with elegant solutions.</p>
+        <div class="cta-buttons">
+          <a href="#" data-tab="projects" class="btn">View My Work</a>
+          <a href="#" data-tab="contact" class="btn btn-outline">Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="tab-content">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>I'm a passionate Full Stack Developer with a deep love for creating impactful and scalable web applications. My stack includes HTML, CSS, JavaScript, React, Node.js, Firebase, Python (Flask/Django), and SQL.</p>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="tab-content">
+      <div class="container">
+        <h2>Services</h2>
+        <ul class="services-list">
+          <li onclick="openTab('web-dev')">👨‍💻 Web Development</li>
+          <li onclick="openTab('api-integration')">📊 API Integration</li>
+          <li onclick="openTab('ui-design')">🎨 UI/UX Design</li>
+          <li onclick="openTab('backend')">⚙️ Backend Development</li>
+          <li onclick="openTab('firebase')">🚀 Firebase & Database Setup</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Individual Service Tabs -->
+    <section id="web-dev" class="tab-content">
+      <div class="container">
+        <h2>Web Development</h2>
+        <p>I specialize in building modern, responsive websites and web applications using HTML, CSS, JavaScript, React, and Node.js.</p>
+        <button onclick="openTab('services')">← Back to Services</button>
+      </div>
+    </section>
+
+    <section id="api-integration" class="tab-content">
+      <div class="container">
+        <h2>API Integration</h2>
+        <p>Seamlessly integrate third-party APIs to extend your application's functionality. From payment gateways to data feeds, I ensure smooth communication between your app and external services.</p>
+        <button onclick="openTab('services')">← Back to Services</button>
+      </div>
+    </section>
+
+    <section id="ui-design" class="tab-content">
+      <div class="container">
+        <h2>UI/UX Design</h2>
+        <p>A great user experience starts with great design. I provide beautiful, user-friendly interfaces with a focus on usability and aesthetics.</p>
+        <button onclick="openTab('services')">← Back to Services</button>
+      </div>
+    </section>
+
+    <section id="backend" class="tab-content">
+      <div class="container">
+        <h2>Backend Development</h2>
+        <p>I work with technologies like Node.js, Express, MongoDB, and SQL to build secure and scalable server-side applications.</p>
+        <button onclick="openTab('services')">← Back to Services</button>
+      </div>
+    </section>
+
+    <section id="firebase" class="tab-content">
+      <div class="container">
+        <h2>Firebase & Database Setup</h2>
+        <p>I offer Firebase solutions including real-time databases, authentication, and cloud functions to ensure your app runs smoothly in the cloud.</p>
+        <button onclick="openTab('services')">← Back to Services</button>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="tab-content">
+      <div class="container">
+        <h2>My Projects</h2>
+        <div class="project-card">
+          <h3>Task Manager App</h3>
+          <p>A simple task tracker built with Firebase for cloud storage.</p>
+          <a href="#" class="project-link">View Project</a>
+        </div>
+        <div class="project-card">
+          <h3>Recipe Finder</h3>
+          <p>Search recipes based on ingredients. Made with JavaScript and an API.</p>
+          <a href="#" class="project-link">View Project</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="tab-content">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <form action="https://formsubmit.co/abefeori@gmail.com" method="POST">
+          <!-- Disable Captcha -->
+          <input type="hidden" name="_captcha" value="false">
+          <!-- Redirect after submission -->
+          <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+        <p id="form-status">You’ll receive a confirmation in your email inbox after someone submits.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Abdurrahman Oriolowo. All rights reserved.</p>
+      <div class="socials">
+        <a href="https://github.com/Abdurrahman-code19" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/abdurrahman-oriolowo-aba188352/" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+  <div class="container">
+    <h1>FormSubmit Demo</h1>
+    <form target="_blank" action="https://formsubmit.co/your@email.com" method="POST">
+      <div class="form-group">
+        <div class="form-row">
+          <div class="col">
+            <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+          </div>
+          <div class="col">
+            <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+    </form>
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    // Handle tab switching for nav links and CTA buttons
+    const links = document.querySelectorAll('.nav-links a, .cta-buttons a');
+    const tabs = document.querySelectorAll('.tab-content');
+
+    links.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const target = link.dataset.tab;
+        if (!target) return;
+        tabs.forEach(tab => tab.classList.remove('active'));
+        document.getElementById(target).classList.add('active');
+      });
+    });
+
+    // Handle service item tab switching
+    function openTab(tabId) {
+      tabs.forEach(tab => tab.classList.remove('active'));
+      const targetTab = document.getElementById(tabId);
+      if (targetTab) {
+        targetTab.classList.add('active');
+        targetTab.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  </script>
+</body>
+</html>
